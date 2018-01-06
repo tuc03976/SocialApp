@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Photo_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-Ig-ls3">
+                                <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                <state key="normal" title="Choose Image"/>
+                                <connections>
+                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SH4-Qx-FaM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4H-kK-ijo">
+                                <rect key="frame" x="0.0" y="617" width="375" height="30"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEH-SF-TYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czB-tl-v5g">
+                                <rect key="frame" x="287" y="617" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Mm-hI-nMm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNB-SC-ieB">
+                                <rect key="frame" x="16" y="617" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xh8-1o-hKr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-IM-pMy">
+                                <rect key="frame" x="53" y="121.5" width="269" height="424"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="L78-TK-49W"/>
+                                    <constraint firstAttribute="height" constant="424" id="V4N-61-TKd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fj5-IM-pMy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2sy-At-xUJ"/>
+                            <constraint firstAttribute="trailing" secondItem="G4H-kK-ijo" secondAttribute="trailing" id="8fs-qE-RH1"/>
+                            <constraint firstItem="G4H-kK-ijo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Djk-D7-Ln7"/>
+                            <constraint firstAttribute="trailing" secondItem="FfY-Ig-ls3" secondAttribute="trailing" id="Sbt-DS-wrh"/>
+                            <constraint firstItem="FfY-Ig-ls3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="X98-UP-hwr"/>
+                            <constraint firstItem="FfY-Ig-ls3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kd1-rX-ghX"/>
+                            <constraint firstItem="FfY-Ig-ls3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbv-Oe-Hvp"/>
+                            <constraint firstItem="fj5-IM-pMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ozo-px-Myt"/>
+                            <constraint firstItem="G4H-kK-ijo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnR-Iu-w6R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G4H-kK-ijo" secondAttribute="bottom" constant="20" id="xpS-q5-l56"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="fj5-IM-pMy" id="IYM-Xs-aVV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo-camera.png" width="512" height="512"/>
+    </resources>
 </document>

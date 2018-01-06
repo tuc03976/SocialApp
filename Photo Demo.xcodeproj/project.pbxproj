@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0058B8C1FDD64D00045C56A /* photo-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B01CB0781FC1B3FF00C87728 /* photo-camera.png */; };
+		B0058B9B1FEA804B0045C56A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF4FEA151F027FA500DC3C75 /* Info.plist */; };
+		B0058B9E1FEA80670045C56A /* Photo_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA291F027FA500DC3C75 /* Photo_DemoUITests.swift */; };
+		B0058B9F1FEA807E0045C56A /* Photo_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA1E1F027FA500DC3C75 /* Photo_DemoTests.swift */; };
 		EF4FEA0A1F027FA500DC3C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA091F027FA500DC3C75 /* AppDelegate.swift */; };
 		EF4FEA0C1F027FA500DC3C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA0B1F027FA500DC3C75 /* ViewController.swift */; };
 		EF4FEA0F1F027FA500DC3C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4FEA0D1F027FA500DC3C75 /* Main.storyboard */; };
 		EF4FEA111F027FA500DC3C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4FEA101F027FA500DC3C75 /* Assets.xcassets */; };
 		EF4FEA141F027FA500DC3C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4FEA121F027FA500DC3C75 /* LaunchScreen.storyboard */; };
-		EF4FEA1F1F027FA500DC3C75 /* Photo_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA1E1F027FA500DC3C75 /* Photo_DemoTests.swift */; };
-		EF4FEA2A1F027FA500DC3C75 /* Photo_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FEA291F027FA500DC3C75 /* Photo_DemoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B01CB0781FC1B3FF00C87728 /* photo-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-camera.png"; sourceTree = "<group>"; };
 		EF4FEA061F027FA500DC3C75 /* Photo Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4FEA091F027FA500DC3C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4FEA0B1F027FA500DC3C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 				EF4FEA0B1F027FA500DC3C75 /* ViewController.swift */,
 				EF4FEA0D1F027FA500DC3C75 /* Main.storyboard */,
 				EF4FEA101F027FA500DC3C75 /* Assets.xcassets */,
+				B01CB0781FC1B3FF00C87728 /* photo-camera.png */,
 				EF4FEA121F027FA500DC3C75 /* LaunchScreen.storyboard */,
 				EF4FEA151F027FA500DC3C75 /* Info.plist */,
 			);
@@ -188,8 +192,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Robert Percival";
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Steven Watson";
 				TargetAttributes = {
 					EF4FEA051F027FA500DC3C75 = {
 						CreatedOnToolsVersion = 9.0;
@@ -232,6 +236,8 @@
 				EF4FEA141F027FA500DC3C75 /* LaunchScreen.storyboard in Resources */,
 				EF4FEA111F027FA500DC3C75 /* Assets.xcassets in Resources */,
 				EF4FEA0F1F027FA500DC3C75 /* Main.storyboard in Resources */,
+				B0058B9B1FEA804B0045C56A /* Info.plist in Resources */,
+				B0058B8C1FDD64D00045C56A /* photo-camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4FEA1F1F027FA500DC3C75 /* Photo_DemoTests.swift in Sources */,
+				B0058B9E1FEA80670045C56A /* Photo_DemoUITests.swift in Sources */,
+				B0058B9F1FEA807E0045C56A /* Photo_DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4FEA2A1F027FA500DC3C75 /* Photo_DemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +338,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -387,6 +395,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -419,9 +429,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Photo.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,9 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Photo.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,6 +458,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-DemoTests";
@@ -461,6 +474,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-DemoTests";
@@ -475,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-DemoUITests";
@@ -489,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MSZ8ZH8KE2;
 				INFOPLIST_FILE = "Photo DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "robpercival.Photo-DemoUITests";
@@ -518,6 +534,7 @@
 				EF4FEA301F027FA500DC3C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF4FEA311F027FA500DC3C75 /* Build configuration list for PBXNativeTarget "Photo DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +543,7 @@
 				EF4FEA331F027FA500DC3C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF4FEA341F027FA500DC3C75 /* Build configuration list for PBXNativeTarget "Photo DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +552,7 @@
 				EF4FEA361F027FA500DC3C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
